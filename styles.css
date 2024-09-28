@@ -13,12 +13,14 @@ body {
 }
 
 a {
-    color: #BA4A00;
+    color: #2C2C2C;
     text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #BA4A00;
 }
 
 .header {
@@ -60,10 +62,39 @@ a:hover {
     color: #fff;
 }
 
-.contact-info__location,
 .contact-info__email {
-    margin-bottom: 5px;
+    display: inline-block;
+    position: relative;
     color: #2C2C2C;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info__social-link,
+.experience__item-link {
+    position: relative;
+    color: #2C2C2C;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info__email::after,
+.contact-info__social-link::after,
+.experience__item-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #BA4A00;
+    transition: width 0.3s ease-in-out;
+}
+
+.contact-info__email:hover::after,
+.contact-info__social-link:hover::after,
+.experience__item-link:hover::after {
+    width: 100%;
 }
 
 .contact-info__social-link {
@@ -116,6 +147,10 @@ color: #555;
 .experience__item-links {
     display: flex;
     flex-direction: column;
+}
+
+a.experience__item-link {
+    display: inline-block;
 }
 
 .skills {
@@ -218,7 +253,7 @@ color: #999;
     text-align: center;
     margin: 0 auto;
     padding: 10px 20px;
-    width: 20%;
+    width: fit-content;
     background-color: #BA4A00;
     color: #fff;
     border: none;
@@ -229,6 +264,131 @@ color: #999;
 }
 
 .download__button:hover {
-    text-decoration: underline;
+    background-color: #a84300;
+    color: #fff;
+    text-decoration: none;
 }
 
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .header__name {
+        font-size: 2em;
+    }
+
+    .header__role {
+        font-size: 1em;
+    }
+
+    .main {
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    .contact-info__title,
+    .profile__title,
+    .skills__title,
+    .soft-skills__title,
+    .education__title,
+    .languages__title {
+        font-size: 1.2em;
+    }
+
+    .download__button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    .skills__list,
+    .soft-skills__list,
+    .languages__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills__item,
+    .soft-skills__item,
+    .languages__item {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__name {
+        font-size: 2.2em;
+    }
+
+    .header__role {
+        font-size: 1.1em;
+    }
+
+    .main {
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .contact-info__title,
+    .profile__title,
+    .skills__title,
+    .soft-skills__title,
+    .education__title,
+    .languages__title {
+        font-size: 1.3em;
+    }
+
+    .skills__list,
+    .soft-skills__list{
+        justify-content: center;
+    }
+
+    .download__button {
+        padding: 10px 20px;
+        font-size: 1.1em;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .header__name {
+        font-size: 2.5em;
+    }
+
+    .header__role {
+        font-size: 1.2em;
+    }
+
+    .download__button {
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+        max-width: 1000px;
+    }
+
+    .header__name {
+        font-size: 3em;
+    }
+
+    .header__role {
+        font-size: 1.3em;
+    }
+
+    .profile__title,
+    .skills__title,
+    .soft-skills__title,
+    .education__title,
+    .languages__title {
+        font-size: 1.7em;
+    }
+}
