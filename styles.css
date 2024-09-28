@@ -149,8 +149,8 @@ color: #555;
     flex-direction: column;
 }
 
-a.experience__item-link {
-    display: inline-block;
+.experience__item-link {
+    width: max-content;
 }
 
 .skills {
