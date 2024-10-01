@@ -62,12 +62,8 @@ a:hover {
     color: #fff;
 }
 
-.contact-info__email {
-    display: inline-block;
-    position: relative;
-    color: #2C2C2C;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+.fa-envelope {
+    color: #2c2c2c;
 }
 
 .contact-info__social-link,
@@ -123,6 +119,10 @@ a:hover {
     margin-bottom: 30px;
 }
 
+.experience__item {
+    margin-bottom: 10px;
+}
+
 .experience__item-role {
     font-size: 1.2em;
     font-weight: 600;
@@ -134,14 +134,26 @@ font-size: 1em;
 color: #777;
 }
 
+.item-dates--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    gap: 8px;
+}
+
 .experience__item-dates {
-font-size: 0.9em;
-color: #999;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.fa-calendar-days {
+    color: #999999
 }
 
 .experience__item-description {
-margin-top: 10px;
-color: #555;
+    color: #555;
 }
 
 .experience__item-links {
@@ -151,6 +163,7 @@ color: #555;
 
 .experience__item-link {
     width: max-content;
+    color: #555;
 }
 
 .skills {
@@ -203,6 +216,10 @@ color: #555;
     margin-bottom: 30px;
 }
 
+.education__item {
+    margin-bottom: 10px;
+}
+
 .education__title {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -221,7 +238,11 @@ color: #777;
 
 .education__item-dates {
 font-size: 0.9em;
-color: #999;
+color: #999999;
+}
+
+p.education__item-additional {
+    color: #555;
 }
 
 /* Languages */
@@ -268,6 +289,13 @@ color: #999;
     color: #fff;
     text-decoration: none;
 }
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #e5e5e5;
+}   
 
 @media (max-width: 600px) {
     body {

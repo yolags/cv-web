@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,9 +19,9 @@
 
     <main class="main">
         <section class="contact-info">
-            <h2 class="contact-info__title">Información de Contacto</h2>
             <p class="contact-info__location">Madrid, Spain</p>
-            <p class="contact-info__email"><a href="mailto:yoleanny.garcia@gmail.com">yoleanny.garcia@gmail.com</a></p>
+            <i class="fa-regular fa-envelope"></i>
+            <a class="contact-info__email"  href="mailto:yoleanny.garcia@gmail.com">Contacto</a>
             <div class="contact-info__social">
                 <a href="https://www.linkedin.com/in/yoleannygarcia/" class="contact-info__social-link">LinkedIn</a>
                 <a href="https://github.com/yolags" class="contact-info__social-link">GitHub</a>
@@ -40,19 +41,23 @@
             <div class="experience__item">
                 <h3 class="experience__item-role">Voluntariado en Introducción al Código</h3>
                 <p class="experience__item-company">Fundación Somos F5, Madrid</p>
-                <p class="experience__item-dates">Enero 2024</p>
-                <p class="experience__item-description">
-                    Introducción a la programación en entornos escolares, enseñando los fundamentos de HTML y CSS a estudiantes.
-                </p>
+                <div class="item-dates--container">
+                    <p class="experience__item-dates">Enero 2024</p>
+                    <i class="fa-solid fa-calendar-days fa-sm"></i>
+                </div>
+                <p class="experience__item-description"> Introducción a la programación en entornos escolares, enseñando los fundamentos de HTML y CSS a estudiantes.</p>
             </div>
             <div class="experience__item">
                 <h3 class="experience__item-role">Diseñadora Web</h3>
                 <p class="experience__item-company">Proyecto Freelance</p>
-                <p class="experience__item-dates">Septiembre 2023</p>
+                <div class="item-dates--container">
+                    <p class="experience__item-dates">Septiembre 2023</p>
+                    <i class="fa-solid fa-calendar-days fa-sm"></i>
+                </div>
                 <p class="experience__item-description">Diseño y prototipado de interfaces web utilizando Figma.</p>
                 <div class="experience__item-links">
-                    <a class="experience__item-link" href="https://www.behance.net/gallery/204167847/Propuesta-Houselink">Propuesta de diseño</a>
-                    <a class="experience__item-link" href="https://houselink.es">Houselink.es</a>
+                    <a class="experience__item-link" href="https://www.behance.net/gallery/204167847/Propuesta-Houselink">- Propuesta de diseño</a>
+                    <a class="experience__item-link" href="https://houselink.es">- Houselink.es</a>
                 </div>
             </div>
         </section>
@@ -98,17 +103,26 @@
             <div class="education__item">
                 <h3 class="education__item-degree">Agentes del cambio - Transformación Digital</h3>
                 <p class="education__item-institution">Grupo Aspasia | Escuela de Organización Industrial (EOI), Madrid</p>
-                <p class="education__item-dates">Febrero 2024 - Mayo 2024</p>
+                <div class="item-dates--container">
+                    <p class="education__item-dates">Febrero 2024 - Mayo 2024</p>
+                    <i class="fa-solid fa-calendar-days fa-sm"></i>
+                </div>
             </div>
             <div class="education__item">
                 <h3 class="education__item-degree">Desarrollo web FullStack</h3>
                 <p class="education__item-institution">Factoría F5, Madrid</p>
-                <p class="education__item-dates">Octubre 2022 - Abril 2023</p>
+                <div class="item-dates--container">
+                    <p class="education__item-dates">Octubre 2022 - Abril 2023</p>
+                    <i class="fa-solid fa-calendar-days fa-sm"></i>
+                </div>
             </div>
             <div class="education__item">
                 <h3 class="education__item-degree">Ingeniería de Sistemas</h3>
                 <p class="education__item-institution">Universidad Gran Mariscal de Ayacucho, Venezuela</p>
-                <p class="education__item-dates">Septiembre 2009 - Julio 2014</p>
+                <div class="item-dates--container">
+                    <p class="education__item-dates">Septiembre 2009 - Julio 2014</p>
+                    <i class="fa-solid fa-calendar-days fa-sm"></i>
+                </div>
                 <p class="education__item-additional">10mo semestre aprobado</p>
             </div>
         </section>
@@ -125,5 +139,10 @@
             <a href="./downloads/cv-yoleanny-garcia_2024.pdf" class="download__button" download>Descargar CV</a>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Yoleanny García Silva. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
